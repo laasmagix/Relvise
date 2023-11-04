@@ -1043,14 +1043,12 @@ body {
   padding: 40px 0;
 }
 .contact__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .contact__body {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__content {
+  padding: 0px 20px 0px 0px;
 }
 .contact__title {
   color: #252b42;
@@ -1073,6 +1071,7 @@ body {
   display: flex;
   padding: 15px 40px;
   align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 5px;
   background-color: #ff7b47;
@@ -1087,15 +1086,14 @@ body {
 .contact__button:hover {
   background-color: #fe530f;
 }
-@media (max-width: 685px) {
-  .contact {
-    padding: 20px 0;
-  }
+@media (min-width: 767px) {
   .contact__body {
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .contact__body:not(:last-child) {
-    margin: 0px 0px 10px 0px;
+  .contact__content {
+    padding: 0px 0px 20px 0px;
   }
 }
 /* ================================================================================ */
