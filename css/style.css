@@ -1036,5 +1036,66 @@ body {
   }
 }
 /* ================================================================================ */
+/* ======================================== Contact ======================================== */
+.page__contact {
+}
+.contact {
+  padding: 40px 0;
+}
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact__body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+.contact__title {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 133.333%;
+  letter-spacing: 0.1px;
+}
+.contact__body > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+.contact__text {
+  color: #737373;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.857%;
+  letter-spacing: 0.2px;
+}
+.contact__button {
+  display: flex;
+  padding: 15px 40px;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ff7b47;
 
-/* 1:25:41 */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  transition: all 0.3s ease;
+}
+.contact__button:hover {
+  background-color: #fe530f;
+}
+@media (max-width: 685px) {
+  .contact {
+    padding: 20px 0;
+  }
+  .contact__body {
+    flex-wrap: wrap;
+  }
+  .contact__body:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+  }
+}
+/* ================================================================================ */
